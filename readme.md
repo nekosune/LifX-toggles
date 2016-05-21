@@ -3,4 +3,5 @@ Simple program meant to toggle lifx bulbs on-off remotely and easilly from a web
 
 ##Usage
 Put inside the .env file 
+
     LIFX_KEY=lifx Api Key here
