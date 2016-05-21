@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/lights','LightsController@index');
+Route::get('/lights/{id}','LightsController@show')->where('id','[0-9a-fA-F]+');
+Route::post('/lights/{id}/toggle','LightsController@toggle')->where('id','[0-9a-fA-F]+');

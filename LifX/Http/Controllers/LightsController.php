@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 
 use LifX\Http\Requests;
 
-class Lights extends Controller
+class LightsController extends Controller
 {
+    public $key;
+
+    public function __construct()
+    {
+        $key=config('keys.LifX')
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,7 @@ class Lights extends Controller
      */
     public function index()
     {
-        //
+        return $key;
     }
 
 
